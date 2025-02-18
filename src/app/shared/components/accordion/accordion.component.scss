@@ -1,0 +1,53 @@
+@use '../../../shared/sass/colors.scss' as *;
+
+.accordion {
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.accordion.collapsed {
+  background-color: $app-white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.accordion.expanded {
+  border: none;
+  background-color: transparent;
+}
+
+.accordion.disabled {
+  background-color: $app-light-gray;
+  box-shadow: none;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+
+  h3 {
+    font-size: 23px;
+    font-weight: 700;
+  }
+}
+
+.accordion-content {
+  margin-top: 16px;
+}
+
+.toggle-icon {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+  filter: invert(51%) sepia(5%) saturate(144%) hue-rotate(180deg) brightness(90%);
+}
+
+.expanded .toggle-icon {
+  transform: rotate(180deg);
+}

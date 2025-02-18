@@ -1,0 +1,12 @@
+@use 'shared/sass/colors.scss' as *;
+
+.container {
+  width: 100%;
+  background-color: $app-background-color;
+
+  .wrapper {
+    max-width: 903px;
+    margin: 0 auto;
+    padding: 48px 64px;
+  }
+}

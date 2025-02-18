@@ -1,0 +1,24 @@
+@use '../../../shared/sass/colors.scss' as *;
+
+:host {
+  width: 50%;
+}
+
+.container {
+  border: 1px dashed #ccc;
+  border-radius: 9px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  p {
+    color: $app-orange-text;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .location.hover {
+    background-color: #f0f0f0;
+  }
+}

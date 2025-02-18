@@ -1,0 +1,126 @@
+<section class="areas-items">
+  <div class="header">
+    <span>Areas & Items</span>
+    <span class="badge">+ New Area</span>
+  </div>
+  <div class="accordion" [ngClass]="{ expanded: expanded, collapsed: !expanded }">
+    <div class="accordion-header" (click)="toggle()">
+      <h3>Living room</h3>
+      <div class="header-options">
+        <span class="add-item">+ Add Item</span>
+        <span class="add-labor">+ Add Item</span>
+        <span class="three-dots">
+          <img src="assets/images/icons/menu-dots-vertical.png" alt="Toggle" />
+        </span>
+        <img src="assets/images/icons/down-arrow.png" alt="Toggle" class="toggle-icon" />
+      </div>
+    </div>
+    <div class="accordion-content" *ngIf="expanded">
+      <div class="content">
+        <span class="badge">Client Description</span>
+        <p class="info">
+          In the Living Room, we will replace the existing TV with a new Samsung Frame TV and integrate it with a Control4 system for enhanced
+          control. The audio setup will include a Sonos Arc soundbar and a subwoofer. Additional equipment like an Apple TV and Blu-ray player will be
+          installed in a built-in cabinet.
+        </p>
+        <p class="notes">Add Internal / Installer Notes</p>
+      </div>
+      <div class="order-container">
+        <table class="order-table">
+          <thead>
+            <tr>
+              <th style="display: flex; flex-direction: row; align-items: center; gap: 4px"><input type="checkbox" /> Items</th>
+              <th>Sell Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="product-info">
+                <input type="checkbox" style="margin-right: 10px" />
+                <img src="assets/images/pictures/tv.png" alt="Sony TV" />
+                <div>
+                  <strong class="tv-name">Sony XBR75X900F</strong><br />
+                  <span class="tv-desc">Sony 75" Slim 4K Smart LED Ultra HDTV with HDR X1 Extreme</span>
+                  <p class="description">This is the model of the 75" Sony that would work well with your system.</p>
+                  <span class="tag">Custom</span>
+                  <span class="tag">Tax Exempt</span>
+                  <span class="price-change">Price Decreased on Change Order 1</span>
+                </div>
+              </td>
+              <td class="price">
+                <small class="msrp">msrp $2,599.99</small><br />
+                <div class="price-wrapper"><strong class="price">$2,499.00</strong> <img src="assets/images/icons/pricepng.png" alt="Price" /></div>
+                <span class="profit">40.1% Profit</span>
+              </td>
+              <td class="quantity">
+                <input type="number" value="1" min="1" />
+              </td>
+              <td class="total">
+                <strong>$2,499.00</strong>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="product-info">
+                <input type="checkbox" style="margin-right: 10px" />
+                <img src="assets/images/pictures/tv.png" alt="Sony TV" />
+                <div>
+                  <strong class="tv-name">Sony XBR75X900F</strong><br />
+                  <span class="tv-desc">Sony 75" Slim 4K Smart LED Ultra HDTV with HDR X1 Extreme</span>
+                  <p class="description">This is the model of the 75" Sony that would work well with your system.</p>
+                  <span class="tag">Custom</span>
+                  <span class="tag">Tax Exempt</span>
+                  <span class="price-change">Price Decreased on Change Order 1</span>
+                </div>
+              </td>
+              <td class="price">
+                <small class="msrp">msrp $2,599.99</small><br />
+                <div class="price-wrapper"><strong class="price">$2,499.00</strong> <img src="assets/images/icons/pricepng.png" alt="Price" /></div>
+                <span class="profit">40.1% Profit</span>
+              </td>
+              <td class="quantity">
+                <input type="number" value="1" min="1" />
+              </td>
+              <td class="total">
+                <strong>$2,499.00</strong>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="product-info">
+                <input type="checkbox" style="margin-right: 10px" />
+                <img src="assets/images/pictures/tv.png" alt="Sony TV" />
+                <div>
+                  <strong class="tv-name">Sony XBR75X900F</strong><br />
+                  <span class="tv-desc">Sony 75" Slim 4K Smart LED Ultra HDTV with HDR X1 Extreme</span>
+                  <p class="description">This is the model of the 75" Sony that would work well with your system.</p>
+                  <span class="tag">Custom</span>
+                  <span class="tag">Tax Exempt</span>
+                  <span class="price-change">Price Decreased on Change Order 1</span>
+                </div>
+              </td>
+              <td class="price">
+                <small class="msrp">msrp $2,599.99</small><br />
+                <div class="price-wrapper"><strong class="price">$2,499.00</strong> <img src="assets/images/icons/pricepng.png" alt="Price" /></div>
+                <span class="profit">40.1% Profit</span>
+              </td>
+              <td class="quantity">
+                <input type="number" value="1" min="1" />
+              </td>
+              <td class="total">
+                <strong>$2,499.00</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="total-footer">
+          <span>Living Room Total</span>
+          <strong>$4,567.21</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
