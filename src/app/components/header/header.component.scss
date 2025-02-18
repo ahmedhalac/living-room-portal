@@ -1,0 +1,7 @@
+@use '../../shared/sass/colors.scss' as *;
+
+.container {
+  color: red;
+  background-color: $app-light-gray;
+  height: 80px;
+}
