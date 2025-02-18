@@ -1,11 +1,16 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { AccordionComponent } from '../../shared/components/accordion/accordion.component';
 
 @Component({
   selector: 'app-areas-items',
   standalone: true,
-  imports: [AccordionComponent],
+  imports: [CommonModule],
   templateUrl: './areas-items.component.html',
   styleUrl: './areas-items.component.scss',
 })
-export class AreasItemsComponent {}
+export class AreasItemsComponent {
+  expanded = false;
+  toggle(): void {
+    this.expanded = !this.expanded;
+  }
+}
