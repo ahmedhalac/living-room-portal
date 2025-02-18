@@ -1,0 +1,32 @@
+@use '../../../shared/sass/colors.scss' as *;
+
+.container {
+  display: flex;
+  background: $app-white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+  padding-right: 20px;
+}
+.content p {
+  font-size: 15px;
+  color: $app-black-text;
+  line-height: 22px;
+}
+
+.image-container {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 5px;
+}

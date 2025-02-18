@@ -1,0 +1,43 @@
+@use '../../../shared/sass/colors.scss' as *;
+
+.container {
+  display: flex;
+  background: $app-white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  .badge {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: $app-light-gray-text;
+  }
+
+  p {
+    font-size: 15px;
+    color: $app-black-text;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    line-height: 22px;
+  }
+
+  .title {
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+
+  .custom {
+    margin-top: 0;
+  }
+
+  .ending {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    color: $app-orange-text;
+    padding-top: 8px;
+  }
+}

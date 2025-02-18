@@ -1,0 +1,64 @@
+@use '../../../shared/sass/colors.scss' as *;
+
+.container {
+  width: 100%;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: $app-white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+    padding: 36px;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $app-gray-text;
+        letter-spacing: 1px;
+      }
+    }
+
+    .content-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .text {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+
+          input[type='checkbox'] {
+            accent-color: orange;
+          }
+
+          .info {
+            font-size: 11px;
+            font-weight: 400;
+            color: $app-black-text;
+
+            .settings {
+              color: $app-orange-text;
+            }
+          }
+        }
+      }
+    }
+  }
+}

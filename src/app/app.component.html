@@ -19,5 +19,22 @@
         <app-upload-file text="+ Add Location"></app-upload-file>
       </div>
     </section>
+
+    <app-accordion title="Proposal history" [isDisabled]="true"> </app-accordion>
+    <app-accordion title="Proposal builder" [isDisabled]="true"> </app-accordion>
+
+    <section class="cover-page">
+      <app-accordion title="Cover Page">
+        <app-cover-page></app-cover-page>
+      </app-accordion>
+
+      <app-accordion title="About Us">
+        <app-about-us></app-about-us>
+      </app-accordion>
+
+      <app-accordion title="Project description">
+        <app-project-description></app-project-description>
+      </app-accordion>
+    </section>
   </div>
 </div>

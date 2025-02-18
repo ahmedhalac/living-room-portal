@@ -1,0 +1,9 @@
+<div class="accordion" [ngClass]="{ expanded: expanded, collapsed: !expanded, disabled: isDisabled }">
+  <div class="accordion-header" (click)="toggle()">
+    <h3>{{ title }}</h3>
+    <img src="assets/images/icons/down-arrow.png" alt="Toggle" class="toggle-icon" />
+  </div>
+  <div class="accordion-content" *ngIf="expanded">
+    <ng-content></ng-content>
+  </div>
+</div>
