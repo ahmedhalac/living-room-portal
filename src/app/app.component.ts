@@ -3,25 +3,15 @@ import { DataSelectorComponent } from './shared/components/data-selector/data-se
 import { CommonModule } from '@angular/common';
 import { UploadFileComponent } from './shared/components/upload-file/upload-file.component';
 import { AccordionComponent } from './shared/components/accordion/accordion.component';
-import { CoverPageComponent } from './shared/components/cover-page/cover-page.component';
-import { AboutUsComponent } from './shared/components/about-us/about-us.component';
-import { ProjectDescriptionComponent } from './shared/components/project-description/project-description.component';
+import { OverviewSectionComponent } from './components/overview-section/overview-section.component';
+import { AreasItemsComponent } from './components/areas-items/areas-items.component';
+import { ClientInfoComponent } from './components/client-info/client-info.component';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    CommonModule,
-    DataSelectorComponent,
-    UploadFileComponent,
-    AccordionComponent,
-    CoverPageComponent,
-    AboutUsComponent,
-    ProjectDescriptionComponent,
-  ],
+  imports: [CommonModule, ClientInfoComponent, OverviewSectionComponent, AreasItemsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   standalone: true,
 })
-export class AppComponent {
-  email = 'dwight@schrutebeetfarms.com';
-}
+export class AppComponent {}

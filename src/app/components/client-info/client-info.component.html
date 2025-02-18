@@ -1,0 +1,22 @@
+<div class="client-data-wrapper">
+  <div class="data-selector">
+    <app-data-selector [title]="'Salesperson'" [name]="'Michael Scot'"></app-data-selector>
+    <app-data-selector [title]="'Expiry'" [name]="'No Expiry'"></app-data-selector>
+  </div>
+  <div class="client-details-wrapper">
+    <div class="client-details">
+      <div class="header">
+        <span>Client</span>
+        <img src="assets/images/icons/link.png" alt="link" />
+      </div>
+      <div class="user-info">
+        <span>Dwight Schrute</span>
+        <span>{{ email }}</span>
+      </div>
+    </div>
+    <app-upload-file text="+ Add Location"></app-upload-file>
+  </div>
+</div>
+
+<app-accordion title="Proposal history" [isDisabled]="true"> </app-accordion>
+<app-accordion title="Proposal builder" [isDisabled]="true"> </app-accordion>
