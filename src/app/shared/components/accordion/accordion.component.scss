@@ -20,6 +20,21 @@
   background-color: transparent;
 }
 
+.additional-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+
+  span {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: $app-gray-text;
+  }
+}
+
 .accordion.disabled {
   background-color: $app-light-gray;
   box-shadow: none;
@@ -46,6 +61,10 @@
   height: 25px;
   transition: transform 0.3s ease;
   filter: invert(51%) sepia(5%) saturate(144%) hue-rotate(180deg) brightness(90%);
+}
+
+.toggle-icon.disabled {
+  transform: rotate(-90deg);
 }
 
 .expanded .toggle-icon {

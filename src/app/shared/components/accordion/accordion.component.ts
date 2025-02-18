@@ -11,6 +11,7 @@ import { Component, Input } from '@angular/core';
 export class AccordionComponent {
   @Input() title = 'Accordion Title';
   @Input() isDisabled = false;
+  @Input() shouldShowAdditionalText = false;
 
   expanded = false;
 
