@@ -8,5 +8,27 @@
     max-width: 903px;
     margin: 0 auto;
     padding: 48px 64px;
+
+    .title-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 24px;
+
+      :first-child {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .badge {
+        background-color: $app-light-gray;
+        border-radius: 19px;
+        padding: 10px 16px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0px;
+      }
+    }
   }
 }

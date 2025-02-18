@@ -1,28 +1,6 @@
 @use '../../shared/sass/colors.scss' as *;
 
 .areas-items {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 24px;
-
-    :first-child {
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .badge {
-      background-color: $app-light-gray;
-      border-radius: 19px;
-      padding: 10px 16px;
-      font-size: 12px;
-      font-weight: 700;
-      line-height: 17px;
-      letter-spacing: 0px;
-    }
-  }
-
   .accordion {
     transition:
       background-color 0.3s,
