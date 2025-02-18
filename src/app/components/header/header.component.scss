@@ -1,0 +1,110 @@
+@use '../../shared/sass/colors.scss' as *;
+
+.container {
+  background-color: $app-background-color;
+  border-bottom: 1px solid $app-light-gray;
+  height: 100%;
+  padding: 20px 24px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .custom-info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .proposals {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: $app-light-gray-text;
+      }
+
+      .info {
+        font-size: 23px;
+        font-weight: 700;
+        color: $app-black-text;
+      }
+
+      .name {
+        font-size: 12px;
+        font-weight: 600;
+        color: $app-black-text;
+        line-height: 16px;
+        letter-spacing: -0.1px;
+      }
+    }
+
+    .other-widgets {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+
+      .draft {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        border-radius: 24px;
+        background-color: #dfe1e6;
+        padding: 8px 10px;
+        border-radius: 24px;
+
+        span {
+          font-size: 12px;
+          font-weight: 700;
+          color: $app-light-gray-text;
+          line-height: 15px;
+          letter-spacing: 0px;
+        }
+      }
+
+      .submit {
+        background-color: $app-orange-text;
+        padding: 12px 20px;
+        border-radius: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+        span {
+          font-size: 13px;
+          font-weight: 700;
+          color: $app-white;
+          line-height: 18px;
+          letter-spacing: 0px;
+        }
+      }
+
+      .preview {
+        background-color: $app-light-gray;
+        padding: 12px 20px;
+        border-radius: 24px;
+        font-size: 13px;
+        font-weight: 700;
+        color: $app-black-text;
+        line-height: 17px;
+        letter-spacing: -0.2px;
+      }
+      .three-dots {
+        background-color: $app-light-gray;
+        padding: 5px;
+        width: 25px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+}
