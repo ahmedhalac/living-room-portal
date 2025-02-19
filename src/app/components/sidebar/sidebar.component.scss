@@ -1,0 +1,23 @@
+@use '../../shared/sass/colors.scss' as *;
+
+.container {
+  height: 100vh;
+  width: 120px;
+  background-color: $app-black-text;
+
+  .wrapper {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    .logo {
+      padding: 36px 20px;
+    }
+
+    .nav-items {
+      height: 93px;
+      width: 102px;
+      cursor: pointer;
+    }
+  }
+}

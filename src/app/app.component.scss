@@ -1,33 +1,38 @@
 @use 'shared/sass/colors.scss' as *;
 
 .container {
-  width: 100%;
-  background-color: $app-background-color;
+  display: flex;
+  flex-direction: row;
 
-  .wrapper {
-    max-width: 903px;
-    margin: 0 auto;
-    padding: 48px 64px;
+  .app-wrapper {
+    width: 100%;
+    background-color: $app-background-color;
 
-    .title-info {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 24px;
+    .wrapper {
+      max-width: 903px;
+      margin: 0 auto;
+      padding: 48px 64px;
 
-      :first-child {
-        font-size: 24px;
-        font-weight: 700;
-      }
+      .title-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 24px;
 
-      .badge {
-        background-color: $app-light-gray;
-        border-radius: 19px;
-        padding: 10px 16px;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 17px;
-        letter-spacing: 0px;
+        :first-child {
+          font-size: 24px;
+          font-weight: 700;
+        }
+
+        .badge {
+          background-color: $app-light-gray;
+          border-radius: 19px;
+          padding: 10px 16px;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 17px;
+          letter-spacing: 0px;
+        }
       }
     }
   }
