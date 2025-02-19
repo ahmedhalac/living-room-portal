@@ -1,6 +1,6 @@
 <div class="accordion" [ngClass]="{ expanded: expanded, collapsed: !expanded, disabled: isDisabled }">
   <div class="accordion-header" (click)="toggle()">
-    <h3>{{ title }}</h3>
+    <h3><img *ngIf="shouldShowAdditionalText" src="assets/images/icons/ai.png" alt="ai" /> {{ title }}</h3>
     <div class="additional-row" *ngIf="shouldShowAdditionalText">
       <span class="additional-text">View Proposal Outline</span>
       <img src="assets/images/icons/down-arrow.png" alt="Toggle" class="toggle-icon" [ngClass]="{ disabled: isDisabled }" />
